@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page-container{
+    position: relative;
+    min-height: 100vh;
+}
+.body{
+background-color: blue;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(180deg, #6559EF 0%, #7A0CAD 100%);
+    color: #fff;
+  }
+  .conta-img{
+    width: 10%;
+    font-family: 'Inter';
+font-style: normal;
+display: flex;
+float: left;
+  }
+  .conta-img a{
+    width: 20%;
+    margin-right: 5%;
+  }
+  .conta-img img{
+    width: 100%;
+    float: left;
+    
+  }
+  
+  .conta-img p{
+align-self: center;
+  }
+  .search-bar{
+    align-items: center;
+    width: 634px;
+    height: 48px;
+    background: transparent;
+    border: 1px solid #F5F5F5;
+border-radius: 30px;
+color: white;
+text-align: center;
+font-size: xx-large;
+  }
+  .nav-links a {
+    color: #fff;
+  }
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+  }
+  .menu img{
+    width: 100%;
+  }
+  .menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .menu li {
+    list-style: none;
+    padding: 5px 14px;
+    width: 60px;
+  }
+  .newsbox{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+.news{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+width: 831px;
+height: 271px;
+background: linear-gradient(180deg, #ECEDFC 0%, #C859EF 0.01%, #6A09B6 100%);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+margin-top: 3rem;
+}
+.news_text h2{
+text-align: center;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+color: #F5F5F5;
+}
+.news_text p{
+text-align: center;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+color: #F5F5F5;
+}
+#bib{
+    font-size: 19px;
+}
+.border{
+    border: 1px solid;
+width: 208px;
+height: 0px;
+margin-bottom: 3%;
+}
+.livroimg img{
+    width: 15%;
+    border-radius: 20px;
+    margin: 0 3% 0 1.8%;
+    max-height: 370.7px;
+}
+
