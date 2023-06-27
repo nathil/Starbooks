@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="Cadastro_Login.css">
+        <link rel="stylesheet" type="text/css" href="css/cadLogin.css">
         <title>Login</title>
     </head>
 
@@ -17,8 +17,8 @@
                 
                 <div class="first-column">
                     
-                    <h2 class="title-seja">Seja bem-vindo!</h2>
-                    <img src="/img/simeissomesmo.jpg" alt="Starbooks Logo">
+                    <h1 class="title-seja">Seja bem-vindo!</h1>
+                    <img src="imagens/starbooks.png" alt="Starbooks Logo">
                     <h2 class="subtitle">STARBOOKS</h2>
                     <p class="description">Já tem uma conta?</p>
                     <button id="entrar" class="btn">Entrar</button>
@@ -28,20 +28,15 @@
                 <div class="second-column">
 
                     <div class="background-div">
-
-                            <h2 class="title-crie">Crie sua conta</h2>
                             <form class="form">
+                                <div class="caixa">
+                                <h1 class="title-crie">Crie sua conta</h1>
                                 <input type="email" placeholder="E-mail">
                                 <input type="text" placeholder="Usuário">
                                 <input type="password" placeholder="Senha">
-                                <a href="#">Precisa de ajuda?</a>
                                 <button class="btn2">Criar conta</button>
-
+                                </div>
                             </form>
-
-                        <li><a href="#">Entre com Facebook</a></li>
-                        <li><a href="#">Entre com Instagram</a></li>
-
                     </div>
 
                 </div>
@@ -53,7 +48,7 @@
                 <div class="first-column">
                     
                     <h2 class="title-seja">Seja bem-vindo de volta!</h2>
-                    <img src="/img/simeissomesmo.jpg" alt="Starbooks Logo">
+                    <img src="imagens/starbooks.png" alt="Starbooks Logo"> 
                     <h2 class="subtitle">STARBOOKS</h2>
                     <button id="voltar" class="btn">Voltar</button>
 
@@ -62,15 +57,15 @@
                 <div class="second-column">
 
                     <div class="background-div">
-
-                            <h2 class="title-crie">Entrar</h2>
-                            <p class="description2">Aqui você não apenas toma café!</p>
                             <form class="form">
+                                <div class="caixa">
+                                <h2 class="title-crie">Entrar</h2>
+                                <p class="description2">Aqui você não apenas toma café!</p>
                                 <input type="email" placeholder="E-mail">
                                 <input type="password" placeholder="Senha">
                                 <a class="password" href="#">Esqueceu sua senha?</a>
                                 <button class="btn2">Entrar</button>
-
+                                </div>
                             </form>
 
                     </div>
@@ -81,7 +76,24 @@
 
         </div>
         
-        <script src="cadastro.js"></script>
+        <script>
+            var btnEntrar = document.querySelector("#entrar");
+            console.log(btnEntrar); 
+            var btnVoltar = document.querySelector("#voltar");
+
+            var body = document.querySelector("body");
+
+            btnEntrar.addEventListener("click", function () {
+
+            body.className = "entrar-js";
+        });
+
+            btnVoltar.addEventListener("click", function () {
+
+            body.className = "voltar-js";
+
+        });
+        </script>
 
     </body>
     </html>
