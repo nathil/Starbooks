@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/Cadastro_Login.css">
+        <title>Login</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+            
+            <div class="content first-content">
+                
+                <div class="first-column">
+                    
+                    <h1 class="title-seja">Seja bem-vindo!</h1>
+                    <img src="../imagens/starbooks.png" alt="Starbooks Logo">
+                    <h2 class="subtitle">STARBOOKS</h2>
+                    <p class="description">Já tem uma conta?</p>
+                    <button id="entrar" class="btn">Entrar</button>
+
+                </div>
+
+                <div class="second-column">
+
+                    <div class="background-div">
+                            <form action="pag_inicial.html" class="form">
+                                <div class="caixa">
+                                <h1 class="title-crie">Crie sua conta</h1>
+                                <input type="email" placeholder="E-mail">
+                                <input type="text" placeholder="Usuário">
+                                <input type="password" placeholder="Senha">
+                               <button class="btn2" type="submit" >Criar conta</button>
+                                </div>
+                            </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content second-content">
+
+                <div class="first-column">
+                    
+                    <h2 class="title-seja">Seja bem-vindo de volta!</h2>
+                    <img src="../imagens/starbooks.png" alt="Starbooks Logo"> 
+                    <h2 class="subtitle">STARBOOKS</h2>
+                    <button id="voltar" class="btn">Voltar</button>
+
+                </div>
+
+                <div class="second-column">
+
+                    <div class="background-div">
+                            <form action="pag_inicial.html" class="form">
+                                <div class="caixa">
+                                <h2 class="title-crie">Entrar</h2>
+                                <p class="description2">Aqui você não apenas toma café!</p>
+                                <input type="email" placeholder="E-mail">
+                                <input type="password" placeholder="Senha">
+                                <a class="password" href="#">Esqueceu sua senha?</a>
+                                <button type="submit" class="btn2">Entrar</button>
+                                </div>
+                            </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <script>
+            var btnEntrar = document.querySelector("#entrar");
+            console.log(btnEntrar); 
+            var btnVoltar = document.querySelector("#voltar");
+
+            var body = document.querySelector("body");
+
+            btnEntrar.addEventListener("click", function () {
+
+            body.className = "entrar-js";
+        });
+
+            btnVoltar.addEventListener("click", function () {
+
+            body.className = "voltar-js";
+
+        });
+        </script>
+
+    </body>
+    </html>
