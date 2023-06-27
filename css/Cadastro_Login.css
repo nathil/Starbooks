@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first-column img{
+    height: 194px;
+    width:  188px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:antiquewhite;
+}
+
+.content {
+    background-color: #EEC5FD;;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.content::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(0deg, rgba(101,89,239,1) 0%, rgba(122,12,173,1) 100%);
+    width: 40%;
+    height: 100%;
+
+    left: 0;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+.title-seja {
+    color:white;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.title-crie {
+    color: #645F5F;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+.subtitle{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 100;
+}
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    color:white;
+    line-height: 30px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+}
+
+.description2 {
+    font-size: 14px;
+    font-weight: 300;
+    color: #645F5F;
+    margin-top: 10px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 10px;
+    height: 50px;
+    padding: 10px 50px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    font-weight: bold;
+    color: white;
+    width: 178px;
+    margin-top: 20px;
+    align-self: center;
+    transition: background-color .5s;
+
+}
+
+.btn:hover {
+    background-color: white;
+    color: #783190;
+}
+
+.btn2 {
+    border-radius: 10px;
+    height: 45px;
+    text-transform: uppercase;
+    background-color: #C859EF;
+    color: white;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 178px;
+    align-self: center;
+    margin: 0 20px; 
+    border-width: 0;
+    transition: background-color .5s;
+}
+
+.btn2:hover {
+    background-color: #783190;
+    color: white;
+}
+
+.first-content .second-column {
+    z-index: 11;
+}
+
+.first-column {
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+
+.second-column {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-content {
+    display: flex;  
+}
+.caixa{
+    background-color: white;
+    border-radius: 30px;
+    padding: 100px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.form input {
+    height: 60px;
+    width: 400px;
+    border: none;
+    border-radius: 30px;
+    background-color: #F5F5F5;
+    margin: 20px;
+    padding: 0 15px;
+}
+
+.second-content {
+    position: absolute;
+    display: flex;
+}
+
+.second-content .first-column {
+    order: 2;
+    z-index: -1;
+}
+
+.second-content .second-column {
+    order: 1;
+    z-index: -1;
+}
+
+.password {
+    color: #783190;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.password::first-letter {
+    text-transform: capitalize;
+}
+
+.entrar-js .first-content .first-column,
+.entrar-js .first-content .second-column {
+    z-index: -1;
+}
+
+.entrar-js .second-content .first-column,
+.entrar-js .second-content .second-column {
+    z-index: 11;
+}
+
+.entrar-js .content::before {
+    left: 60%;
+}
+
+.voltar-js .second-content .first-column,
+.voltar-js .second-content .second-column {
+    z-index: -1;
+}
+
+.voltar-js .first-content .first-column,
+.voltar-js .first-content .second-column {
+    z-index: 11;
+}
+.caixa h1{
+    text-align: center;
+    color: #645F5F;
+}
+a{
+    align-self: center;
+}

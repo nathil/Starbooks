@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #fcf1f731;
+}
+section, footer{
+    padding: 54px;
+}
+p{
+    color: #0000009c;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+header{
+    background-position: center;
+    background-size:  cover;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    height: 80px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color: white;
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+nav ul a:not(.btn):after{
+    content: "";
+    background-color: #4f9cf9;
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+nav ul a:hover::after{
+    width: 90%;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner .banner-text{
+    margin: 70px;
+    padding: 1px;
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+.banner .banner-text .Euclides{
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+.banner .banner-text img{
+    text-align: center;
+    align-items: center;
+    padding: 1px;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner .banner-text a{
+    font-size: 32px;
+    color: black;
+    border-top: 10px;
+    font-family: 'Inter';
+    margin-left: 100px;
+    margin-right: 5px;
+    margin-bottom: 0%;
+    padding: 4%;
+    margin-top: 20px;
+}
+.banner .banner-text h1{
+    font-size: 32px;
+    color: black;
+    margin-left: 10px;
+    border-top: 10px;
+    font-family: 'Inter';
+    padding: auto;
+    text-align: center;
+}
+.banner .banner-text h2{
+    font-size: 32px;
+    color: black;
+    margin-left: 20px;
+    border-top: 10px;
+    padding: auto;
+    text-align: center;
+}
+.banner .banner-text p{
+    font-size: 24px;
+    color: black;
+    margin: 8px;
+    padding: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+.banner .banner-text .text-book{
+    font-size: 24px;
+    color: #292727;
+    margin: 8px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1880px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+    .banner .banner-text a{
+        padding: 20px;
+    }
+    .banner .banner-text a{
+        padding: 39px;
+        font-size: 25px;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 1697px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+    .banner .banner-text a{
+        padding: 20px;
+    }
+    .banner .banner-text a{
+        padding: 39px;
+        font-size: 25px;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-height: 920px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+    .banner .banner-text a{
+        padding: 39px;
+        font-size: 24px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+    .gender-group {
+        flex-direction: column;
+    }
+    .gender-title h6 {
+        margin: 0;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+    .banner .banner-text a{
+        padding: 39px;
+        font-size: 25px;
+        margin-left: 10px;
+    }
+}
